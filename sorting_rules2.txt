@@ -3,7 +3,7 @@
     "condition": "source_category == 'helltaker'",
     "action": {
       "type": "copy",
-      "target_path": "C:/Users/g6msd/OneDrive/Pictures/Screenshots/games"
+      "target_path": "C:/Users/g6msd/OneDrive/Pictures/Screenshots/games" 
     }
   },
   {
@@ -13,4 +13,5 @@
       "target_path": "C:/Users/g6msd/OneDrive/Pictures/others"
     }
   }
+
 ]

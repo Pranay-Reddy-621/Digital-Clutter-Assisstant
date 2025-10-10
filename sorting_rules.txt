@@ -10,7 +10,7 @@
     "condition": "source_category=='game'",
     "action": {
       "type": "move",
-      "target_path": "C:/Users/g6msd/OneDrive/Pictures/Screenshots/games/{game_name}/{file_name}"
+      "target_path": "C:/Users/g6msd/OneDrive/Pictures/Screenshots/games/{game_name}/{file_name}" 
     },
     "priority": 1
   },
@@ -43,4 +43,5 @@
     },
     "priority": 2
   }
+
 ]

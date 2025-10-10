@@ -274,7 +274,7 @@ class DigitalDeclutterAssistant(QMainWindow):
         # Refresh view
         self.load_files_to_sort()
     def toggle_json_rules(self):
-        """Animate show/hide of the technical rules JSON panel."""
+        """Animate show/hide of the technical rules JSON panel.""" 
         if self.json_toggle_btn.isChecked():
             self.json_toggle_btn.setText("▲ Hide technical rules")
             self.json_anim.setStartValue(self.json_frame.maximumHeight())
@@ -1244,4 +1244,5 @@ if __name__ == "__main__":
     app.setFont(QFont("Old Standard TT", 12))
     window = DigitalDeclutterAssistant()
     window.show()
+
     sys.exit(app.exec_())

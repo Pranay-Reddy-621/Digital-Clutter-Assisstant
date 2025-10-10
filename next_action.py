@@ -1,6 +1,6 @@
 # next_action.py
 from file_sorter import FileSorter
-
+ 
 class ActionDecider(FileSorter):
     def __init__(self):
         super().__init__()
@@ -33,3 +33,4 @@ class ActionDecider(FileSorter):
 def get_next_action(filepath, window_info):
     decider = ActionDecider()
     return decider.decide_action(filepath, window_info)
+

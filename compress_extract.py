@@ -12,7 +12,7 @@ def compress_file(file_path, output_dir):
     file_name = os.path.basename(file_path)
     zip_path = os.path.join(output_dir, f"{os.path.splitext(file_name)[0]}.zip")
 
-    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf: 
       zipf.write(file_path, arcname=file_name)
 
     print(f"[✓] Compressed {file_path} to {zip_path}")
@@ -36,4 +36,5 @@ def extract_file(zip_path, output_dir):
         return str(output_dir)
     except Exception as e:
         print(f"[x] Extraction failed: {str(e)}")
+
         return None

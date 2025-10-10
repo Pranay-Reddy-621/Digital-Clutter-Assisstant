@@ -8,7 +8,7 @@ def generate_key(key_path='encryption_key.key'):
         raise FileExistsError("Encryption key already exists. Delete it first to generate a new one.")
     
     key = Fernet.generate_key()
-    with open(key_path, 'wb') as f:
+    with open(key_path, 'wb') as f: 
         f.write(key)
     print(f"[✓] Encryption key generated at {os.path.abspath(key_path)}")
     return key
@@ -103,3 +103,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

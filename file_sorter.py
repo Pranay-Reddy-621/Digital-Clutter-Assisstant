@@ -10,7 +10,7 @@ from PIL import Image
 class FileSorter:
     def __init__(self):
         self.ollama_endpoint = "http://localhost:11434/api/generate"
-        self.rules = self.load_rules()
+        self.rules = self.load_rules() 
         self.categories = self.extract_categories_from_rules()
         self.variable_pattern = re.compile(r"{(\w+)}")
         self.temp_image_path = os.path.join(os.path.expanduser("~"), "temp_analysis.jpg")
@@ -256,3 +256,4 @@ class FileSorter:
 def classify_and_move(filepath, window_info):
     sorter = FileSorter()
     return sorter.apply_rules(filepath, window_info)
+

@@ -1,0 +1,46 @@
+[
+  {
+    "condition": "source_category=='game' and game_name=='helltaker'",
+    "action": {
+      "type": "compress"
+    },
+    "priority": 2
+  },
+  {
+    "condition": "source_category=='game'",
+    "action": {
+      "type": "move",
+      "target_path": "C:/Users/g6msd/OneDrive/Pictures/Screenshots/games/{game_name}/{file_name}"
+    },
+    "priority": 1
+  },
+  {
+    "condition": "source_category!='game'",
+    "action": {
+      "type": "delete",
+      "time": "10 seconds"
+    },
+    "priority": 1
+  },
+  {
+    "condition": "filetype=='zip'",
+    "action": {
+      "type": "extract"
+    },
+    "priority": 2
+  },
+  {
+    "condition": "filetype=='pdf'",
+    "action": {
+      "type": "encrypt"
+    },
+    "priority": 2
+  },
+  {
+    "condition": "filetype == 'docx'",
+    "action": {
+      "type": "compress"
+    },
+    "priority": 2
+  }
+]

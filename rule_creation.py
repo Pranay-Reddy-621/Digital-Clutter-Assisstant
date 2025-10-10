@@ -7,7 +7,7 @@ def ask_model(prompt):
                 "http://localhost:11434/api/generate",
                 json={
                     "model": "mistral",
-                    "prompt": prompt,
+                    "prompt": prompt, 
                     "stream": False
                 },
                 timeout=60
@@ -44,4 +44,5 @@ def create_rule_from_natural_language(user_input):
         raw_output = raw_output.split('``````')[0]
             
     print(raw_output)
+
     return json.loads(raw_output)

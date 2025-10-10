@@ -6,7 +6,7 @@ import win32process
 import psutil
 import json
 from pathlib import Path
-from watchdog.observers import Observer
+from watchdog.observers import Observer 
 from watchdog.events import FileSystemEventHandler
 from next_action import get_next_action
 from file_deleter import delete_file
@@ -282,4 +282,5 @@ if __name__ == "__main__":
         r"C:\Users\g6msd\Downloads"
         # Add or remove as needed
     ]
+
     start_monitoring(folders)
